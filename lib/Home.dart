@@ -11,7 +11,21 @@ class HomeState extends State<Home> {
     return Scaffold(
       resizeToAvoidBottomPadding: false,
       appBar: AppBar(
-
+        title: Text('Public Transport Sri Lanka',style: TextStyle(color: Colors.white),),
+        backgroundColor: Colors.red,
+      ),
+      drawer: Drawer(
+        elevation:20.0,
+        child: ListView(
+          padding: EdgeInsets.zero,
+          children: <Widget>[
+            UserAccountsDrawerHeader(
+              decoration: BoxDecoration(color: Colors.red),
+              accountEmail: Text('xx'),
+              accountName: Text('abc'),
+            ),
+          ],
+        ),
       ),
     );
   }
