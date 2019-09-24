@@ -21,8 +21,38 @@ class HomeState extends State<Home> {
           children: <Widget>[
             UserAccountsDrawerHeader(
               decoration: BoxDecoration(color: Colors.red),
-              accountEmail: Text('xx'),
-              accountName: Text('abc'),
+              accountEmail: Text(''),
+              accountName: Text(''),
+            ),
+            ListTile(
+              title: Text('About PTS',style: TextStyle(color: Colors.indigo)),
+              onTap: (){
+                Navigator.pop(context);
+              },
+            ),
+            ListTile(
+              title: Text('Fores Table',style: TextStyle(color: Colors.indigo)),
+              onTap: (){
+
+              },
+            ),
+            ListTile(
+              title: Text('User Profile',style: TextStyle(color: Colors.indigo)),
+              onTap: (){
+
+              },
+            ),
+            ListTile(
+              title: Text('Plan Your Own Journey',style: TextStyle(color: Colors.indigo)),
+              onTap: (){
+                
+              },
+            ),
+            ListTile(
+              title: Text('Help',style: TextStyle(color: Colors.indigo)),
+              onTap: (){
+
+              },
             ),
           ],
         ),
