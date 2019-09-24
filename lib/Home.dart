@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:csse_mobile_app/UserProfile.dart';
 
 class Home extends StatefulWidget{
   @override
@@ -6,6 +7,10 @@ class Home extends StatefulWidget{
 }
 
 class HomeState extends State<Home> {
+  _naviagetPage() {
+    Navigator.push(context,
+        MaterialPageRoute(builder: (context) => UserProfile()));
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -42,12 +47,10 @@ class HomeState extends State<Home> {
             ),
             ListTile(
               title: Text('About PTS',style: TextStyle(color: Colors.blue,fontSize: 18,fontWeight: FontWeight.bold)),
-              onTap: (){
-                Navigator.pop(context);
-              },
-            ),
+              onTap: () {}
+              ),
             ListTile(
-              title: Text('Fores Table',style: TextStyle(color: Colors.blue,fontSize: 18,fontWeight: FontWeight.bold)),
+              title: Text('Fares Table',style: TextStyle(color: Colors.blue,fontSize: 18,fontWeight: FontWeight.bold)),
               onTap: (){
 
               },
@@ -55,7 +58,7 @@ class HomeState extends State<Home> {
             ListTile(
               title: Text('User Profile',style: TextStyle(color: Colors.blue,fontSize: 18,fontWeight: FontWeight.bold)),
               onTap: (){
-
+                _naviagetPage();
               },
             ),
             ListTile(
